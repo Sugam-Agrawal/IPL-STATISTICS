@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day3</title>
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="Settings.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+        <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+        <script src="use.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        
+<nav class="navbar navbar-expand-md navbar-text-right bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="homepage.html">Z1 Inc.</a>  
+    <!-- <span class="navbar-text">Calculator</span> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class=" navbar-right collapse .ml-auto navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="homepage.html">Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="team.html">Player Statistics</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="login.html">Logout</a>
+        </li>
+        
+      </ul>
+    </div>
+  </nav>
+  <br>
+      <div class="row mt-3">
+        <div class="col-1"></div>
+        <div class="col-4 mt-5">
+            <h5 class="bg-light text-dark text-center">Players</h5>
+            <select  class="mt-10 form-control" onchange="startwork()" name="drop1" id="select1">
+                <option  value="">Select team</option>
+            </select>
+            <div class="mt-2" id="b"></div>
+        </div>
+        <div class="col-1" id="space"></div>
+        <div class="col-4">
+          <div id="piechart">
+          </div>
+        </div>
+        </div>
+</body>
+</html>

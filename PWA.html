@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sugam</title>
+        <meta name="viewport" content="width = device-width, initial-scale = 1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        <link rel="stylesheet" href="Settings.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="code.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+        
+<nav class="navbar navbar-expand-md navbar-text-right bg-dark navbar-dark fixed-top">
+    <a class="navbar-brand" href="homepage.html">Z1 Inc.</a>  
+    <!-- <span class="navbar-text">Calculator</span> -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class=" navbar-right collapse .ml-auto navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="homepage.html">Homepage</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+  <!--table ka container-->>
+    <div class="container mt-5">
+      <div class="row">  
+        
+        <!-- code for table -->
+        <div class="col">
+          <form id="calc">
+            <h5 class="bg-light text-dark text-center py-2 px-1">Table</h5>
+              <div class="mt-2">
+                <input type="number" type="button" id="tab1" placeholder="Enter a Number" class="form-control">
+              </div>
+            <div class="mt-2">
+              <button id="tablebtn" type="button" class="btn btn-primary" onclick="multiply()">Answer</button>
+            </div>
+            <div class="mt-5" id="domulti">
+            </div>
+          </form>
+        </div>
+        
+        <!-- code for calculator -->
+        <div class="col">
+          <form id="calc">
+            <h5 class="bg-light text-dark text-center py-2 px-1">Calculator</h5>
+        
+          <!-- text fields -->
+          <div class="mt-2">
+            <input type="number" id="num1" placeholder=" Enter a Number" class="form-control">
+          </div>
+          <div class="mt-2">
+              <input type="number" id="num2" placeholder=" Enter a Number" class="form-control">
+          </div>
+
+                <!-- button -->
+                  <!-- <div class="btn-group btn-group-lg mt-2"> -->
+                <button id="calcbtn" class="btn btn-primary mt-2" onclick="add()" type="button">+</button>
+                <button id="calcbtn" class="btn btn-primary mt-2" onclick="sub()" type="button">-</button>
+                <button id="calcbtn" class="btn btn-primary mt-2" onclick="mul()" type="button">*</button>
+                <button id="calcbtn" class="btn btn-primary mt-2" onclick="div()" type="button">/</button>
+                <button id="calcbtn" class="btn btn-primary mt-2" onclick="mod()" type="button">%</button>
+                <!-- </div> -->
+                <!-- ans -->
+
+                <div mt-5 id="res"></div>
+              </form>          
+        </div>
+
+
+        <div class="col">
+          <form id="calc">
+            <h5 class="bg-light text-dark text-center py-2 px-1">Arithmetic Operations</h5>
+            <div class="mt-2">
+              <input type="number" id="op1" placeholder="Enter a Number" class="form-control">
+            </div>
+            <button id="calcbtn" type="button" class="mt-2 btn btn-primary btn-sm" onclick="reverse()">reverse</button>
+            <button id="calcbtn" type="button" class="btn mt-2  btn-primary btn-sm" onclick="single()">single digit sum</button>
+            <!-- <button id="calcbtn" type="button" class="btn mt-2  btn-primary btn-sm" onclick="arm()">amstrong</button> -->
+            <button id="calcbtn" type="button" class="btn mt-2 btn-primary btn-sm" onclick="prime()">prime factors</button>
+            <div id="extra" class="mt-2"> </div>
+          </form>
+         </div>
+        <!-- </form> -->
+        <!-- <form> -->
+        <!-- </form> -->
+        
+      
+      </div>
+      
+    </body>
+</html>

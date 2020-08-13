@@ -1,0 +1,82 @@
+            #calc
+            {
+                border: 1.2px solid black;
+                padding: 30px;
+                border-radius: 14px;
+            }
+            /* #CC,#xy
+            {
+                overflow: hidden;
+            } */
+           /* to hide chart for small screen */
+            /* @media only screen and (max-width: 1026px) 
+            {
+                #piechart{
+                    display: none;
+                }
+                #space{
+                    display: none;
+                }
+                #xy{
+                    display: none;
+                }
+            } */
+            .navbar,.nav-link
+            {
+                /* background-color: black;
+                text-emphasis-color: white; */
+                text-align: right;
+                margin-left: 10px;
+                margin-right: 10px;  
+                float: right;
+                opacity: 0.915;
+            }
+            .topnav-right
+            {
+                float: right;
+            }
+            .nav-text
+            {
+                text-align: center;
+                margin-left: 10px;
+                margin-right: 20px;
+            }
+            .jumbotron
+            {   
+                background-color: dodgerblue;
+                color: white;
+                font-size: medium;
+                text-align: center;
+                padding-top: 3%;
+                padding-bottom: 3%;
+                padding-left: 0%;
+                padding-right: 0%;
+            }
+            h3
+            {
+                text-align: center;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 24px;  
+                padding-right: 25px;              
+            }
+            h4
+            {
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+                border-collapse:collapse;
+                width: 100%;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                padding-left: 15px;
+                text-align: left;
+                background-color:dodgerblue;
+                color: white;
+            }
+            ul 
+            {
+                font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+            }
+            a.x1 :hover
+            {
+                background-color: aqua;
+            }
+            
